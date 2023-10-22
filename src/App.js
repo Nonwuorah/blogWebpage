@@ -1,5 +1,7 @@
 import "./styles.css";
 import React, { useState, useEffect } from "react";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 import {
   BrowserRouter as Router,

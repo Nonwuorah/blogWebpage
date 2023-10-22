@@ -4,10 +4,18 @@
   padding: 0;
 }
 
+body{
+  height: 100vh;
+}
+
+#root{
+  height: 100%;
+}
+
 .App {
   font-family: Arial, sans-serif;
-  max-width: 800px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .NavMenu {
@@ -40,6 +48,18 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.NavMenu button:hover {
+  color: #555;
+}
+
+.NavMenu .active {
+  color: #f1356d;
+}
+
+.Home{
+  color: #fff;
 }
 
 .Login, .Home, .About, .Profile, .NotFound, .ErrorBoundary .Footer {
@@ -93,10 +113,10 @@
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
-  background-color: #f0f0f0;
+  background-color: #f0f0f08b;
   margin-top: 10px;
   font-weight: bold;
-  position: relative;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;

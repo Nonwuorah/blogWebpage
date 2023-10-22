@@ -1,18 +1,19 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { slideImages } from "./SliderData";
+// import image1 from "./image/slide (1).jpg";
 
-
-const slideImages = [
-  {
-    path: "image/slide (1).jpg",
-    caption: "Slide 1",
-  },
-  {
-    path: "image/slide (1).PNG",
-    caption: "Slide 2",
-  },
-]
+// const slideImagesx = [
+//   {
+//     path: "./src/image/slide (1).jpg",
+//     caption: "Slide 1",
+//   },
+//   {
+//     path: "./src/image/slide (1).png",
+//     caption: "Slide 2",
+//   },
+// ];
 
 const spanStyle = {
   padding: "20px",
@@ -25,7 +26,7 @@ const divStyle = {
   alignItems: "center",
   justifyContent: "center",
   backgroundSize: "cover",
-  height: "400px",
+  height: "450px",
 };
 
 function Home() {
@@ -34,13 +35,16 @@ function Home() {
       <Slide>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <div className="each-slide"
+            <div
+              className="each-slide"
               style={{
                 ...divStyle,
-                backgroundImage: `url(${slideImage.path})`,
+                backgroundImage: `url('${slideImage.path}')`,
               }}
             >
-              <span style={spanStyle}>{slideImage.caption}</span>
+              {/* <span className="caption" style={spanStyle}>
+                {slideImage.caption}
+              </span> */}
             </div>
           </div>
         ))}
