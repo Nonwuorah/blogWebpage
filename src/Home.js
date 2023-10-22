@@ -15,11 +15,11 @@ import { slideImages } from "./SliderData";
 //   },
 // ];
 
-const spanStyle = {
-  padding: "20px",
-  background: "#efefef",
-  color: "#000000",
-};
+// const spanStyle = {
+//   padding: "20px",
+//   background: "#efefef",
+//   color: "#000000",
+// };
 
 const divStyle = {
   display: "flex",
@@ -49,7 +49,7 @@ function Home() {
           </div>
         ))}
       </Slide>
-      <h1>Home</h1>
+      <h1>Welcome to Dashword</h1>
       <p>This is the home page of the app.</p>
     </div>
   );

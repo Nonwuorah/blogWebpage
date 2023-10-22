@@ -19,7 +19,7 @@ const users = [ { username: "admin", password: "admin" },
 useEffect(() => {
   // store the users array in localStorage
   localStorage.setItem("users", JSON.stringify(users));
-}, []);
+});
 
   
 
