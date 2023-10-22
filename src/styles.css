@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.NavMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.NavMenu ul {
+  list-style: none;
+  display: flex;
+}
+
+.NavMenu li {
+  margin: 0 10px;
+}
+
+.NavMenu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.NavMenu a:hover {
+  color: #555;
+}
+
+.NavMenu button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Login, .Home, .About, .Profile, .NotFound, .ErrorBoundary .Footer {
+  padding: 20px;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Login label {
+  margin-bottom: 5px;
+}
+
+.Login input {
+  margin-bottom: 10px;
+}
+
+.Login button {
+  width: 100px;
+}
+
+.error {
+  color: red;
+}
+.NotFound{
+    background: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+.NotFound h1{
+    font-size: 40px;
+    /* color: #f1356d; */
+    margin-bottom: 20px;
+}
+.NotFound h1 span{
+    font-size: 150px;
+}
+.NotFound a{
+    text-decoration: none;
+    color: #1915e6;
+}
+.NotFound a:hover{
+    color: #f1356d;
+}
+.Footer{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  margin-top: 10px;
+  font-weight: bold;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.Footer span{
+  font-weight: bolder;
+  color: purple;
+}
