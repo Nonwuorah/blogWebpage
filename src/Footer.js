@@ -7,7 +7,7 @@ const Footer = () => {
         <span>Nedu</span>© 2023 Blog App All rights reserved.
       </p>
       <p>
-        Powered by <span>React</span>.
+        Powered by React & <span>AltSchool</span>___Africa
       </p>
     </div>
   );
